@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  emails-docker:
+    image: bitnami/postgresql
+    ports:
+      - "5432:5432"
+    environment:
+    - POSTGRESQL_USERNAME=emails
+    - POSTGRESQL_PASSWORD=emails 
+    - POSTGRESQL_DATABASE=emails-database
