@@ -9,8 +9,8 @@ let sut: UsersService
 
 describe('Register Use Case', () => {
   beforeEach(() => {
-    const usersRepository = new InMemoryUsersRepository()
-    const sut = new UsersService(usersRepository)
+    usersRepository = new InMemoryUsersRepository()
+    sut = new UsersService(usersRepository)
   })
 
   it('should be able to register', async () => {

@@ -22,7 +22,7 @@ describe('Get User Profile Service Use Case', () => {
 
     const { user } = await sut.getProfile({ userId: createdUser.id })
 
-    expect(user.id).toEqual('John Doe')
+    expect(user.name).toEqual('John Doe')
   })
 
   it('should not be able to getProfile with worng id', async () => {
